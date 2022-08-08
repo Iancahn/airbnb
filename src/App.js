@@ -2,7 +2,7 @@ import './App.css';
 // Import Components
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import Cards from './components/Cards'
+import Card from './components/Card'
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Nav />
       <Hero />
-      <Cards />
+      <Card />
     </div>
   );
 }

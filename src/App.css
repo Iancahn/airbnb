@@ -18,8 +18,16 @@ body {}
   margin: 1rem;
 }
 
+.gray {
+  color: #918E9B;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 section {
-  padding: 1rem;
+  padding: 5rem;
 }
 
 .hero {
@@ -32,7 +40,7 @@ section {
   width: 50%;
   align-self: center;
   margin-top: 6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .hero--header {
@@ -43,3 +51,7 @@ section {
 .hero--text {
   font-size: 1.1rem;
 }
+
+.card--image {}
+
+.card--stats {}
