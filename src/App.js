@@ -9,31 +9,25 @@ import data from './data';
 console.log(data);
 
 function App() {
-  // const cards = data.map(item => {
-  //   return (
-  //     <Card
-  //       img={item.coverImg}
-  //       rating=""
-  //       reviewCount={6}
-  //       country="USA"
-  //       title="Life Lessons with Katie Zaferes"
-  //       price={136}
-  //     />
-  //   )
-  // })
+  const cards = data.map(item => {
+    return (
+      <Card
+        img={item.coverImg}
+        rating={item.stats.rating}
+        reviewCount={item.stats.reviewCount}
+        location={item.location}
+        title={item.title}
+        price={item.price}
+      />
+    )
+  })
 
   return (
     <div className="App">
       <Nav />
       <Hero />
-      <Card
-        img="katie-zaferes.png"
-        rating="5.0"
-        reviewCount={77}
-        location="USA"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
-      />
+      {cards}
+
     </div>
   );
 }
