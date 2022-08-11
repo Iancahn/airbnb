@@ -27,7 +27,7 @@ function App() {
       <Nav />
       <Hero />
       <Card
-        img="../images/katie-zaferes.png"
+        img="katie-zaferes.png"
         rating="5.0"
         reviewCount={77}
         location="USA"
