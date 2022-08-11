@@ -55,3 +55,7 @@ section {
 .card--image {}
 
 .card--stats {}
+
+.card--star {
+  height: 14px;
+}

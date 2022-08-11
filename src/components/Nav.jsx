@@ -1,5 +1,5 @@
 import React from 'react';
-import airlogo from '../img/airbnb-logo.jpg';
+import airlogo from '../images/airbnb-logo.jpg';
 
 function Nav() {
     return (

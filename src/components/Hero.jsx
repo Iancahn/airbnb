@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../img/airbnb-head-image.jpg';
+import heroImage from '../images/airbnb-head-image.jpg';
 
 function Hero() {
     return (
