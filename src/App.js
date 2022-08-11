@@ -1,8 +1,9 @@
+import React from 'react';
 import './App.css';
 // Import Components
-import Nav from './components/Nav'
-import Hero from './components/Hero'
-import Card from './components/Card'
+import Nav from './components/Nav';
+import Hero from './components/Hero';
+import Card from './components/Card';
 
 
 function App() {
@@ -10,7 +11,14 @@ function App() {
     <div className="App">
       <Nav />
       <Hero />
-      <Card />
+      <Card
+        img=""
+        rating=""
+        reviewCount={6}
+        country="USA"
+        title="Life Lessons with Katie Zaferes"
+        price={136}
+      />
     </div>
   );
 }

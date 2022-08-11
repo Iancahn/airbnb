@@ -3,16 +3,16 @@ import React from 'react';
 function Card(props) {
     return (
         <div className="card">
-            <img src="" alt="" className="card--image" />
-            <div className="card--stats">
+            <img src={`../img/${props.img}`} alt="" className="card--image" />
+            <div className='card--stats'>
                 {/* stars pngs */}
-                <img src="#" id="#" />
-                <span>5.0</span>
-                <span className='gray'>(6) • </span>
-                <span className='gray'>USA</span>
+                <img src='../img/star.png' id="card--star" />
+                <span>{props.rating}</span>
+                <span className='gray'>({props.reviewCount}) • </span>
+                <span className='gray'>{props.country}</span>
             </div>
-            <p>Life Lessons</p>
-            <p><span className='bold'>From $??? per night</span></p>
+            <p>{props.title}</p>
+            <p><span className='bold'>From ${props.price} per night</span></p>
         </div>
     )
 }
