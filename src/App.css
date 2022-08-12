@@ -2,15 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+
 }
 
-body {}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
 
 .navbar {
   padding: 1rem;
   box-shadow: 0px 3px 8px rgba(50, 0, 0, 0.1);
-
 }
 
 #airlogo {
@@ -27,13 +29,13 @@ body {}
 }
 
 section {
-  padding: 5rem;
+  padding: 4rem;
 }
 
 .hero {
-
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #hero--img {
@@ -52,10 +54,43 @@ section {
   font-size: 1.1rem;
 }
 
-.card--image {}
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px;
+  overflow-x: auto;
+  align-content: center;
+  justify-content: center;
+}
 
-.card--stats {}
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
 
 .card--star {
   height: 14px;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card {
+  width: 250px;
+  font-size: 16px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
 }
