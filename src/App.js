@@ -13,7 +13,11 @@ function App() {
     return (
       <Card
         key={item.id}
-        item={item}
+        // using a spread instead of passing object below:
+        {...item}
+      // spread replaces this below:
+      // item={item}
+      // line above replaces all of this :
       // img={item.coverImg}
       // rating={item.stats.rating}
       // reviewCount={item.stats.reviewCount}
